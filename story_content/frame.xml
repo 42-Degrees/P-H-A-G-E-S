@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<bwFrame xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" default_layout="pxabnsnfns00001100101" textdirection="ltr" textengine="DirectWrite" device="false" fontscale="100" captionFontScale="100" kbshortcuts="false" skip_nav_enabled="true" chromeless="true" outputtype="undefined" theme="unified" themeAccentColor="0x4FBDF4">
+<bwFrame xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" default_layout="pxabnsnfns00001100101" textdirection="ltr" textengine="DirectWrite" device="false" fontscale="100" captionFontScale="100" kbshortcuts="false" skip_nav_enabled="true" chromeless="true" preventUpscale="true" outputtype="undefined" theme="unified" themeAccentColor="0x4FBDF4">
   <layouts>
     <layout name="npnxnanbsnfns00001100101" font="Lato" controllayout="npnxnanbsnfns00001100101" colorscheme="pxabnsnfns00001100101" string_table="pxabnsnfns00001100101" />
     <layout name="pxabnsnfns00001100101" font="Lato" controllayout="pxabnsnfns00001100101" colorscheme="pxabnsnfns00001100101" string_table="pxabnsnfns00001100101" />
@@ -13,7 +13,7 @@
         <options>
           <option name="title_enabled" value="true">
             <options>
-              <option name="title_text" value="PHAGES" />
+              <option name="title_text" value="PHAGES AI" />
             </options>
           </option>
           <option name="logo_enabled" value="false">
@@ -44,6 +44,7 @@
             </options>
           </option>
           <option name="logoAltText" />
+          <option name="logoAltTextEnabled" value="true" />
         </options>
       </optiongroup>
       <optiongroup name="menuoptions">
@@ -1403,144 +1404,157 @@
   </colorschemes>
   <string_tables>
     <string_table name="pxabnsnfns00001100101">
-      <string id="three_image_progress_audio">progress</string>
+      <string id="acc_cc_hide">Hide captions (Ctrl+Alt+C)</string>
+      <string id="acc_cc_show">Show captions (Ctrl+Alt+C)</string>
+      <string id="acc_enter_fullscreen">Enter full-screen (Ctrl+Alt+F)</string>
+      <string id="acc_exit_fullscreen">Exit full-screen (Ctrl+Alt+F)</string>
+      <string id="acc_locked">locked</string>
+      <string id="acc_modern_video_captions">video captions</string>
+      <string id="acc_modern_video_fullscreen">full-screen video</string>
+      <string id="acc_modern_video_mute">mute video</string>
+      <string id="acc_modern_video_pause">pause video</string>
+      <string id="acc_modern_video_pip">picture-in-picture</string>
+      <string id="acc_modern_video_play">play video</string>
+      <string id="acc_modern_video_playback_speed">playback speed</string>
+      <string id="acc_modern_video_settings">video settings</string>
+      <string id="acc_modern_video_transcript">Open</string>
+      <string id="acc_modern_video_volume">video volume</string>
+      <string id="acc_mute">Mute (Ctrl+Alt+M)</string>
+      <string id="acc_next">Next (Ctrl+Alt+Period)</string>
+      <string id="acc_next_visual">Next (Ctrl+Alt+.)</string>
+      <string id="acc_pause">Pause (Ctrl+Alt+P)</string>
+      <string id="acc_play">Play (Ctrl+Alt+P)</string>
+      <string id="acc_playback_speed">Playback speed</string>
+      <string id="acc_previous">Previous (Ctrl+Alt+Comma)</string>
+      <string id="acc_previous_visual">Previous (Ctrl+Alt+,)</string>
+      <string id="acc_replay">Replay (Ctrl+Alt+R)</string>
+      <string id="acc_search_input">search</string>
+      <string id="acc_settings">Settings</string>
+      <string id="acc_skipnavigation">Back to top</string>
+      <string id="acc_slide_progress">slide progress</string>
+      <string id="acc_submit">Submit (Ctrl+Alt+S)</string>
+      <string id="acc_three_image_count_of_total_item_visited">%count% of %total% item visited</string>
+      <string id="acc_three_image_count_of_total_items_visited">%count% of %total% items visited</string>
+      <string id="acc_three_image_step_count_of_total">step %count% of %total%</string>
+      <string id="acc_unmute">Unmute (Ctrl+Alt+M)</string>
+      <string id="acc_video_transcript_list">Transcript</string>
+      <string id="acc_visited">visited</string>
+      <string id="acc_window_close">Close</string>
+      <string id="acc_window_move">Move window</string>
+      <string id="acc_window_options">Options</string>
+      <string id="acc_window_resize">Resize window</string>
+      <string id="accessible_text">Accessible text</string>
+      <string id="acctext_shortcut">Toggle accessible text</string>
+      <string id="action">Action</string>
+      <string id="alt_key">Alt</string>
+      <string id="background_audio">Background audio</string>
+      <string id="background_audio_shortcut">Toggle background audio</string>
+      <string id="clear">Clear and return to menu</string>
+      <string id="close">Close</string>
+      <string id="closed_captions">Captions</string>
+      <string id="closedcaptions_shortcut">Toggle captions</string>
+      <string id="comma_key">Comma</string>
+      <string id="continueresponsive">Continue</string>
+      <string id="ctrl_key">Ctrl</string>
+      <string id="desktop_start">Start Course</string>
+      <string id="disabled_orientation">Please rotate your device</string>
+      <string id="enable_keyboardshortcuts">Enable keyboard shortcuts</string>
+      <string id="filter">Filter</string>
+      <string id="fullscreen_shortcut">Toggle full-screen</string>
+      <string id="glossary">Glossary</string>
+      <string id="keyboardshortcuts">Keyboard Shortcuts</string>
+      <string id="keyboardshortcuts_lower">Keyboard shortcuts</string>
+      <string id="mobile_start">Start Course</string>
+      <string id="modern_video_captions_label">Captions</string>
+      <string id="modern_video_captions_off">Off</string>
+      <string id="modern_video_captions_on">On</string>
+      <string id="modern_video_normal_speed">Normal</string>
+      <string id="modern_video_playback_settings">Video Playback Settings</string>
+      <string id="modern_video_playback_speed_title">Playback Speed</string>
+      <string id="modern_video_settings_close">close video settings</string>
+      <string id="mute_shortcut">Mute / unmute</string>
+      <string id="next">NEXT</string>
+      <string id="next_shortcut">Next</string>
+      <string id="outline">Menu</string>
+      <string id="outline_container">Menu</string>
+      <string id="period_key">Period</string>
+      <string id="playback_speed_normal">Normal</string>
+      <string id="playback_speed_title">Playback Speed</string>
+      <string id="playpause_shortcut">Play / pause</string>
+      <string id="prev">PREV</string>
+      <string id="previous_shortcut">Previous</string>
+      <string id="progress_hour">hour</string>
+      <string id="progress_hours">hours</string>
+      <string id="progress_minute">minute</string>
+      <string id="progress_minutes">minutes</string>
+      <string id="progress_second">second</string>
+      <string id="progress_seconds">seconds</string>
+      <string id="question_mark_key">Question mark</string>
+      <string id="replay_shortcut">Replay</string>
+      <string id="resources">Resources</string>
+      <string id="restart">Restart</string>
+      <string id="resume">Resume</string>
+      <string id="search">Search...</string>
+      <string id="search_in">Search in:</string>
+      <string id="search_results">Search Results</string>
+      <string id="search_toggle">Search</string>
+      <string id="shift_key">Shift</string>
+      <string id="shortcut">Shortcut</string>
+      <string id="shortcuthelp">List keyboard shortcuts</string>
+      <string id="sidebar_toggle">Sidebar Toggle</string>
+      <string id="slide_text_chk">Slide Text</string>
+      <string id="streaming_video_local_playback_learn_more">Learn More</string>
+      <string id="streaming_video_local_playback_republish">To watch this video, use the preview feature in Storyline 360, upload your published output to a server, publish to Review 360, or switch to static video quality.</string>
+      <string id="streaming_video_local_playback_title">Streaming video is unavailable for local playback.</string>
+      <string id="submit">SUBMIT</string>
+      <string id="submit_shortcut">Submit</string>
+      <string id="terms">Terms</string>
       <string id="three_image_audio">audio</string>
       <string id="three_image_camera_down">camera moved down</string>
       <string id="three_image_camera_left">camera moved left</string>
       <string id="three_image_camera_right">camera moved right</string>
       <string id="three_image_camera_up">camera moved up</string>
-      <string id="three_image_interaction_free">free exploration mode</string>
-      <string id="three_image_interaction_guided">guided tour mode</string>
+      <string id="three_image_count_of_total">%count% of %total%</string>
+      <string id="three_image_count_of_total_visited">%count% of %total% visited</string>
       <string id="three_image_hotspot">hotspot</string>
-      <string id="progress_hour">hour</string>
-      <string id="progress_hours">hours</string>
       <string id="three_image_instructions">Use the w, a, s, and d keys to move around the 360 degree image. Press the tab key to jump to interactive markers and hotspots.</string>
       <string id="three_image_interaction">360 degree image interaction</string>
+      <string id="three_image_interaction_free">free exploration mode</string>
+      <string id="three_image_interaction_guided">guided tour mode</string>
+      <string id="three_image_interaction_next">next</string>
+      <string id="three_image_interaction_prev">previous</string>
       <string id="three_image_label">label</string>
       <string id="three_image_marker">marker</string>
-      <string id="progress_minute">minute</string>
-      <string id="progress_minutes">minutes</string>
-      <string id="three_image_interaction_next">next</string>
       <string id="three_image_pause_audio">pause audio</string>
       <string id="three_image_pause_video">pause video</string>
       <string id="three_image_play_audio">play audio</string>
       <string id="three_image_play_video">play video</string>
-      <string id="three_image_interaction_prev">previous</string>
-      <string id="progress_second">second</string>
-      <string id="progress_seconds">seconds</string>
-      <string id="three_image_count_of_total">%count% of %total%</string>
-      <string id="acc_three_image_step_count_of_total">step %count% of %total%</string>
-      <string id="three_image_tooltip">tooltip</string>
-      <string id="three_image_total_items">%total% items</string>
-      <string id="three_image_total_item">%total% item</string>
+      <string id="three_image_progress_audio">progress</string>
       <string id="three_image_progress_video">progress</string>
+      <string id="three_image_tooltip">tooltip</string>
+      <string id="three_image_total_item">%total% item</string>
+      <string id="three_image_total_items">%total% items</string>
       <string id="three_image_video">video</string>
       <string id="three_image_video_volume">video volume</string>
-      <string id="acc_three_image_count_of_total_items_visited">%count% of %total% items visited</string>
-      <string id="acc_three_image_count_of_total_item_visited">%count% of %total% item visited</string>
-      <string id="three_image_count_of_total_visited">%count% of %total% visited</string>
-      <string id="accessible_text">Accessible text</string>
-      <string id="background_audio">Background audio</string>
-      <string id="keyboardshortcuts_lower">Keyboard shortcuts</string>
-      <string id="zoom_to_fit">Zoom to fit</string>
-      <string id="modern_video_settings_close">close video settings</string>
-      <string id="acc_modern_video_fullscreen">full-screen video</string>
-      <string id="modern_video_playback_settings">Video Playback Settings</string>
-      <string id="modern_video_captions_off">Off</string>
-      <string id="modern_video_captions_on">On</string>
-      <string id="modern_video_captions_label">Captions</string>
-      <string id="acc_modern_video_settings">video settings</string>
-      <string id="acc_modern_video_mute">mute video</string>
-      <string id="modern_video_normal_speed">Normal</string>
-      <string id="acc_modern_video_pause">pause video</string>
-      <string id="acc_modern_video_pip">picture-in-picture</string>
-      <string id="acc_modern_video_play">play video</string>
-      <string id="modern_video_playback_speed_title">Playback Speed</string>
-      <string id="acc_modern_video_captions">video captions</string>
-      <string id="acc_modern_video_playback_speed">playback speed</string>
-      <string id="acc_modern_video_volume">video volume</string>
-      <string id="closed_captions">Captions</string>
-      <string id="continueresponsive">Continue</string>
-      <string id="next">NEXT</string>
-      <string id="prev">PREV</string>
-      <string id="submit">SUBMIT</string>
-      <string id="playback_speed_title">Playback Speed</string>
-      <string id="playback_speed_normal">Normal</string>
-      <string id="continue">Continue</string>
-      <string id="glossary">Glossary</string>
-      <string id="terms">Terms</string>
-      <string id="action">Action</string>
-      <string id="alt_key">Alt</string>
-      <string id="ctrl_key">Ctrl</string>
-      <string id="keyboardshortcuts">Keyboard Shortcuts</string>
-      <string id="enable_keyboardshortcuts">Enable keyboard shortcuts</string>
-      <string id="shortcuthelp">List keyboard shortcuts</string>
-      <string id="mute_shortcut">Mute / unmute</string>
-      <string id="next_shortcut">Next</string>
-      <string id="playpause_shortcut">Play / pause</string>
-      <string id="previous_shortcut">Previous</string>
-      <string id="replay_shortcut">Replay</string>
-      <string id="shift_key">Shift</string>
-      <string id="shortcut">Shortcut</string>
-      <string id="submit_shortcut">Submit</string>
-      <string id="acctext_shortcut">Toggle accessible text</string>
-      <string id="background_audio_shortcut">Toggle background audio</string>
-      <string id="closedcaptions_shortcut">Toggle captions</string>
-      <string id="fullscreen_shortcut">Toggle full-screen</string>
       <string id="togglezoom">Toggle zoom to fit</string>
-      <string id="outline">Menu</string>
       <string id="transcript">Notes</string>
-      <string id="disabled_orientation">Please rotate your device</string>
-      <string id="resources">Resources</string>
-      <string id="restart">Restart</string>
-      <string id="resume">Resume</string>
-      <string id="close">Close</string>
-      <string id="acc_locked">locked</string>
-      <string id="acc_next">Next (Ctrl+Alt+Period)</string>
-      <string id="acc_previous">Previous (Ctrl+Alt+Comma)</string>
-      <string id="acc_search_input">search</string>
-      <string id="sidebar_toggle">Sidebar Toggle</string>
-      <string id="acc_skipnavigation">Back to top</string>
-      <string id="acc_slide_progress">slide progress</string>
-      <string id="desktop_start">Start Course</string>
-      <string id="mobile_start">Start Course</string>
-      <string id="acc_visited">visited</string>
-      <string id="clear">Clear and return to menu</string>
-      <string id="search_in">Search in:</string>
-      <string id="filter">Filter</string>
-      <string id="search">Search...</string>
-      <string id="transcript_chk">Notes</string>
-      <string id="search_results">Search Results</string>
-      <string id="slide_text_chk">Slide Text</string>
-      <string id="streaming_video_local_playback_learn_more">Learn More</string>
-      <string id="streaming_video_local_playback_republish">To watch this video, use the preview feature in Storyline 360, upload your published output to a server, publish to Review 360, or switch to static video quality.</string>
-      <string id="streaming_video_local_playback_title">Streaming video is unavailable for local playback.</string>
-      <string id="acc_cc_hide">Hide captions (Ctrl+Alt+C)</string>
-      <string id="acc_cc_show">Show captions (Ctrl+Alt+C)</string>
-      <string id="acc_enter_fullscreen">Enter full-screen (Ctrl+Alt+F)</string>
-      <string id="acc_exit_fullscreen">Exit full-screen (Ctrl+Alt+F)</string>
-      <string id="acc_mute">Mute (Ctrl+Alt+M)</string>
-      <string id="acc_next_visual">Next (Ctrl+Alt+.)</string>
-      <string id="acc_pause">Pause (Ctrl+Alt+P)</string>
-      <string id="acc_play">Play (Ctrl+Alt+P)</string>
-      <string id="acc_playback_speed">Playback speed</string>
-      <string id="acc_previous_visual">Previous (Ctrl+Alt+,)</string>
-      <string id="acc_replay">Replay (Ctrl+Alt+R)</string>
-      <string id="search_toggle">Search</string>
-      <string id="acc_settings">Settings</string>
-      <string id="acc_submit">Submit (Ctrl+Alt+S)</string>
-      <string id="acc_unmute">Unmute (Ctrl+Alt+M)</string>
       <string id="transcript_auto_scroll">Autoscroll</string>
-      <string id="acc_window_close">Close</string>
-      <string id="acc_video_transcript_list">Transcript</string>
-      <string id="acc_window_move">Move window</string>
-      <string id="acc_modern_video_transcript">Open</string>
-      <string id="acc_window_resize">Resize window</string>
+      <string id="transcript_chk">Notes</string>
+      <string id="transcript_show_timestamp">Show timestamps</string>
       <string id="video_transcript_resume_autoscroll">Resume autoscroll</string>
       <string id="video_transcript_select_track">Select track</string>
-      <string id="transcript_show_timestamp">Show timestamps</string>
       <string id="video_transcript_title">Transcripts</string>
-      <string id="acc_window_options">Options</string>
+      <string id="zoom_to_fit">Zoom to fit</string>
+      <string id="continue">Continue</string>
+      <string id="invalid_prompt_button">OK</string>
+      <string id="invalid_prompt_message">You must complete the question before submitting.</string>
+      <string id="invalid_prompt_title">Invalid Answer</string>
+      <string id="print_prompt_button">OK</string>
+      <string id="print_prompt_title">Enter name</string>
+      <string id="print_prompt_message">Enter your name in the field below:</string>
+      <string id="timer_prompt_button">OK</string>
+      <string id="timer_prompt_title">Time Limit Exceeded</string>
+      <string id="timer_prompt_message">You have reached the time limit set for the quiz. Press 'OK' to continue.</string>
     </string_table>
   </string_tables>
   <fonts>
@@ -1558,10 +1572,19 @@
         <slidelink slideid="_player.5xAIzeYBuqB" displaytext="Untitled Scene" expand="true" type="slide">
           <links>
             <slidelink slideid="_player.5xAIzeYBuqB.60EnT86pT1p" displaytext="Intro" expand="false" type="slide" />
+            <slidelink slideid="_player.5xAIzeYBuqB.6HsYvt4iBVz" displaytext="Home Screen" expand="false" type="slide" />
+            <slidelink slideid="_player.5xAIzeYBuqB.5wJgyhibODT" displaytext="Paper Viewer" expand="false" type="slide" />
+            <slidelink slideid="_player.5xAIzeYBuqB.5q41DStdSht" displaytext="Infographic" expand="false" type="slide" />
+            <slidelink slideid="_player.5xAIzeYBuqB.6EaGGS5DZng" displaytext="Case Studies" expand="false" type="slide" />
+            <slidelink slideid="_player.5xAIzeYBuqB.6DPXWqOYMcM" displaytext="Coral Reef" expand="false" type="slide" />
+            <slidelink slideid="_player.5xAIzeYBuqB.5rA2aYxlwHc" displaytext="Yellowstone" expand="false" type="slide" />
+            <slidelink slideid="_player.5xAIzeYBuqB.5jeCgOEQ4xS" displaytext="Instructions" expand="false" type="slide" />
+            <slidelink slideid="_player.5xAIzeYBuqB.5kvQMA5l5nz" displaytext="User Q" expand="false" type="slide" />
+            <slidelink slideid="_player.5xAIzeYBuqB.6AZPtVbw7n9" displaytext="Goldilocks" expand="false" type="slide" />
+            <slidelink slideid="_player.5xAIzeYBuqB.5ovOzUeCRWv" displaytext="Analysis" expand="false" type="slide" />
             <slidelink slideid="_player.5xAIzeYBuqB.6TIyY7z32Xe" displaytext="CF" expand="false" type="slide" />
-            <slidelink slideid="_player.5xAIzeYBuqB.6pFcw1xq05l" displaytext="Intro" expand="false" type="slide" />
-            <slidelink slideid="_player.5xAIzeYBuqB.6fsxwszUtX1" displaytext="Coral Reef" expand="false" type="slide" />
-            <slidelink slideid="_player.5xAIzeYBuqB.5p6fJyRxMJB" displaytext="Yellowstone" expand="false" type="slide" />
+            <slidelink slideid="_player.5xAIzeYBuqB.67U5AEGaooI" displaytext="Now What?" expand="false" type="slide" />
+            <slidelink slideid="_player.5xAIzeYBuqB.5eqpUpwRkjI" displaytext="Extend" expand="false" type="slide" />
           </links>
         </slidelink>
       </links>

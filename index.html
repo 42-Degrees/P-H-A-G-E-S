@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <!-- Created using Storyline 360 x64 - http://www.articulate.com  -->
-  <!-- version: 3.88.32574.0 -->
-  <title>PHAGES</title>
+  <!-- version: 3.101.34925.0 -->
+  <title>PHAGES AI</title>
   <meta http-equiv="x-ua-compatible" content="IE=edge"/>
   <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,shrink-to-fit=no,minimal-ui"/>
   <meta name="apple-mobile-web-app-capable" content="yes"/>
@@ -24,20 +24,20 @@
       tinCanPresent: false,
       cmi5Present: false,
       aoSupport: false,
-      scale: 'noscale',
+      scale: 'Scaled',
       captureRc: false,
       browserSize: 'optimal',
       bgColor: '#282828',
-      features: 'DropInBase,DropInCore,DropInInteractions,DropInMisc,DropInVectors,DropInVideo,LayerPresentAsDialog,MultipleQuizTracking,UpdatedThemeEditor',
+      features: 'DropInBase,JsApiBasics,MultipleQuizTracking,NativePrompts,PlayerSizeOption,TextEntryCharacterLimit',
       themeName: 'unified',
       preloaderColor: '#FFFFFF',
       suppressAnalytics: false,
       productChannel: 'stable',
       publishSource: 'storyline',
-      aid: 'aid|e48151c9-72d8-4101-82fd-e9c03a1c3868',
-      cid: '2668bb04-0422-447d-910b-9b978dd20d80',
-      playerVersion: '3.88.32574.0',
-      publishTimestamp: '2024-11-05T23:01:19.4752880Z',
+      aid: 'aid|b13b979c-5d0c-5ec4-b6e9-9501d83d3b02',
+      cid: 'dbb28ad5-0263-4743-a823-5e7cc2bd631f',
+      playerVersion: '3.101.34925.0',
+      publishTimestamp: '2025-08-14T18:03:49.0901912Z',
       maxIosVideoElements: 10,
       connectionSettings: { message: 'You%20are%20offline.%20Trying%20to%20reconnect...', useDarkTheme: false, mode: 'disabled' },
       hasFeature: function(feature) {
@@ -62,6 +62,15 @@
       }
 
     };
+
+    if (window.flagsUnderTest != null) {
+      window.globals.features = window.flagsUnderTest.reduce((accum, feature) => {
+        if (!accum.includes(feature)) {
+          accum.push(feature);
+        }
+        return accum;
+      }, window.globals.features.split(',')).join();
+    }
   </script>
   <script>
     var isIe11 = ('ActiveXObject' in window || window.MSBlobBuilder != null)
@@ -73,7 +82,7 @@
   </script>
 
   <script>
-    if (window.globals.hasFeature('MultiLanguageSupport')) {
+    if (window.globals.hasFeature('Localization')) {
       
       
     }
@@ -142,7 +151,7 @@
   </script>
 
   <div class="mobile-load-title-overlay" style="display: none">
-    <div class="mobile-load-title">PHAGES</div>
+    <div class="mobile-load-title">PHAGES AI</div>
   </div>
 
   <div class="mobile-chrome-warning"></div>
