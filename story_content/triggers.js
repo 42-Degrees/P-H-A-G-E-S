@@ -2,67 +2,67 @@ function ExecuteScript(strId)
 {
   switch (strId)
   {
-      case "6LjzG3AL15j":
+      case "5cm5NZd3of5":
         Script1();
         break;
-      case "5lZ028fO0rQ":
+      case "5WTG1fxysAU":
         Script2();
         break;
-      case "6lelRpbuBMO":
+      case "5a7fvsEjd7F":
         Script3();
         break;
-      case "5lFqcVQSBoH":
+      case "69ceDapRDsw":
         Script4();
         break;
-      case "5YdhudikweS":
+      case "5l6KXuEe0h4":
         Script5();
         break;
-      case "5iGPxyGE8IM":
+      case "6W9gaZUid5Z":
         Script6();
         break;
-      case "5wF5Fh9EVMa":
+      case "6UhEQ332o4W":
         Script7();
         break;
-      case "6BgTpz5pWIj":
+      case "5i0D90UGYEQ":
         Script8();
         break;
-      case "61CwS12cSky":
+      case "643xRumsA1M":
         Script9();
         break;
-      case "5YQeAqI76Pr":
+      case "6YlmmPlvKwx":
         Script10();
         break;
-      case "6X4Pa7TcP0I":
+      case "6oPeGbDzIOf":
         Script11();
         break;
-      case "6LdDxbSVzl9":
+      case "62QLl6e3lj0":
         Script12();
         break;
-      case "5Z5ckIpKJtR":
+      case "6GGWsZ6qf41":
         Script13();
         break;
-      case "5WJpLipVZHP":
+      case "6L1JS0ib4mb":
         Script14();
         break;
-      case "6a5C1oyYSly":
+      case "5xu9xxjOLtz":
         Script15();
         break;
-      case "6RsjdTfnbhp":
+      case "6cR4IbjvnwR":
         Script16();
         break;
-      case "5dqsPbDFqcp":
+      case "6CTSZPTVQKh":
         Script17();
         break;
-      case "5toiOZQzXCj":
+      case "5riucHCs5YL":
         Script18();
         break;
-      case "6NritCdElSb":
+      case "6GmAfYl0AnH":
         Script19();
         break;
-      case "5fHuCu9k9NI":
+      case "6M2OtPoU1rt":
         Script20();
         break;
-      case "5xcGkfqh07Z":
+      case "6TUk5OqYCPi":
         Script21();
         break;
   }
